@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/netflix-logo.png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="./images/chinese-character.png" alt="" class="chinese">
+                                English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Espanol</a></li>
+                                <li><a class="dropdown-item" href="#">Portugues</a></li>
+                                <li><a class="dropdown-item" href="#">Francias</a></li>
+                                <li><a class="dropdown-item" href="#">Svenska</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Suomi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="button" class="btn btn-secondary" id="button">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="hero-write-up">
+            <p id="one">Unlimited movies, TV shows, and more</p>
+            <p id="two">Starts at ₦2,500. Cancel anytime.</p>
+            <p id="three">Ready to watch? Enter your email to create or restart your membership.</p>
+            <p id="four"> <input type="text" placeholder="Email address"> <button>Get Started <i
+                        class="fa-solid fa-chevron-right"></i></button></p>
+        </div>
+    </div>
+
+
+    <!-- More Reasons to Join -->
+
+    <div class="reason-to-join">
+        <p id="header">More Reasons to Join</p>
+
+        <div class="cards">
+            <!-- First card -->
+            <div class="card" style="width: 18rem;" data-bs-theme="light">
+                <div class="card-body-1">
+                    <h5 class="card-title-1">Enjoy on your TV</h5>
+                    <p class="card-text-1">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players,
+                        and
+                        more.</p>
+                    <img src="./images/desktop.png" alt="">
+                </div>
+            </div>
+
+
+            <!-- Second Card -->
+            <div class="card" style="width: 18rem;" data-bs-theme="light">
+                <div class="card-body-2">
+                    <h5 class="card-title-2">Download your shows to watch offline</h5>
+                    <p class="card-text-2" id="sec-p">Save your favorites easily and always have something to watch.</p>
+                    <img src="./images/arrow-down.png" alt="" id="sec-img">
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="card" style="width: 18rem;" data-bs-theme="light">
+                <div class="card-body-3">
+                    <h5 class="card-title-3" id="third-h5">Watch everywhere</h5>
+                    <p class="card-text-3" id="third-p">Stream unlimited movies and TV shows on your phone, tablet,
+                        laptop, and TV.</p>
+                    <img src="./images/pipe.png" alt="" id="third-img">
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="card" style="width: 18rem;" data-bs-theme="light">
+                <div class="card-body-4">
+                    <h5 class="card-title-4">Create profiles for kids</h5>
+                    <p class="card-text-4" id="forth-p">Send kids on adventures with their favorite characters in a space
+                        made just for
+                        them — free with your membership.</p>
+                    <img src="./images/sms.png" alt="" id="fourth-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Trending Now -->
+
+    <!-- <p class="trending">Trending Now</p>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="poster-row">
+                    <img src="./images/one.png" alt="Beauty in Black">
+                    <img src="./images/two.png" alt="Colours of Fire">
+                    <img src="./images/three.png" alt="Alpha">
+                    <img src="./images/four.png" alt="King of Thieves">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="poster-row">
+                    <img src="./images/five.png" alt="King of Thieves">
+                    <img src="./images/six.png" alt="Beauty in Black">
+                    <img src="./images/seven.png" alt="Colours of Fire">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="poster-row">
+                    <img src="./images/eight.png" alt="Alpha">
+                    <img src="./images/nine.png" alt="King of Thieves">
+                    <img src="./images/ten.png" alt="Beauty in Black">
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+
+
+    <div class="carousel-container">
+        <h2 class="carousel-title">Trending Now</h2>
+
+        <div class="slider-wrapper">
+            <section id="section-1" class="slider-section">
+                <a href="" class="arrow arrow-next">&#8250;</a>
+
+                <div class="item"><img src="./images/one.png" alt=""></div>
+                <div class="item"><img src="./images/two.png" alt=""></div>
+                <div class="item"><img src="./images/three.png" alt=""></div>
+                <div class="item"><img src="./images/four.png" alt=""></div>
+                <div class="item"><img src="./images/five.png" alt=""></div>
+            </section>
+
+            <section id="section-2" class="slider-section">
+                <a href="" class="arrow arrow-prev" onclick="scrollSlider('row1', -1)">&#8249;</a>
+                <a href="" class="arrow arrow-next" >&#8250;</a>
+
+                <div class="item"><img src="./images/six.png" alt=""></div>
+                <div class="item"><img src="./images/seven.png" alt=""></div>
+                <div class="item"><img src="./images/eight.png" alt=""></div>
+                <div class="item"><img src="./images/nine.png" alt=""></div>
+                <div class="item"><img src="./images/ten.png" alt=""></div>
+            </section>
+        </div>
+    </div>
+
+
+    <p class="question">Frequently Asked Questions</p>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    What is Netflix?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                    anime, documentaries, and more on thousands of internet-connected devices. <br>
+
+                    You can watch as much as you want, whenever you want without a single commercial – all for one
+                    low monthly price. There's always something new to discover and new TV shows and movies are
+                    added every week!
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How much does Netflix cost?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from ₦2,500 to ₦8,500/month.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Where can I watch?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br>
+
+                    You can also download your favorite shows with the iOS or Android app. Use downloads to watch while
+                    you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I cancel?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Netflix is flexible. You can easily cancel your account online in two clicks. There are no
+                    cancellation fees – start or stop your account anytime.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What can I watch on Netflix?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is Netflix good for kids?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                    family-friendly TV shows and movies in their own space.<br>
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ready to watch... Email -->
+
+    <div class="ready">
+        <p id="h-text">Ready to watch? Enter your email to create or restart your membership.</p>
+        <p id="four"> <input type="text" placeholder="Email address"> <button>Get Started <i
+                    class="fa-solid fa-chevron-right"></i></button></p>
+    </div>
+
+
+    <footer>
+        <p id="head"><a href="">Questions? Conact Us.</a></p>
+        <div class="links">
+            <div>
+                <p><a href="">FAQ</a></p>
+                <p><a href="">Investor Relations</a></p>
+                <p><a href="">Privacy</a></p>
+                <p><a href="">Speed Test</a></p>
+            </div>
+
+            <div>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">Jobs</a></p>
+                <p><a href="">Cookie Preference</a></p>
+                <p><a href="">Legal Notices</a></p>
+            </div>
+
+            <div>
+                <p><a href="">Account</a></p>
+                <p><a href="">Ways to Watch</a></p>
+                <p><a href="">Corporate information</a></p>
+                <p><a href="">Only on Netflix</a></p>
+            </div>
+
+            <div>
+                <p><a href="">Media Center</a></p>
+                <p><a href="">Terms of Use</a></p>
+                <p><a href="">Contact Us</a></p>
+            </div>
+        </div>
+
+        <div class="lang"><span>&nbsp;<img src="./images/chinese-character.png" alt="" width="25px"
+                    height="25px">English</span><span><i class="fa-solid fa-caret-down"></i></span></div>
+
+        <p id="net-nigeria">Netflix Nigeria</p>
+
+        <p id="last">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+        
+        <button class="final">Get Started</button>
+    </footer>
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
