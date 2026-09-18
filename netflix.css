@@ -68,8 +68,12 @@ nav .container-fluid {
 
 @media (max-width: 600px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     nav {
-        width: 370px !important;
+        width: 100% !important;
         height: 120px !important;
         padding: 5px 10px 0 10px !important;
         background-color: transparent !important;
@@ -237,7 +241,7 @@ nav .container-fluid {
     .hero-write-up {
         margin-left: 32px;
         margin-top: 10px !important;
-        width: 370px !important;
+        width: calc(100% - 64px) !important;
     }
 
     .hero-write-up #one {
@@ -317,6 +321,7 @@ nav .container-fluid {
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
 
     box-shadow: none;
+    overflow-x: hidden;
 }
 
 
@@ -325,6 +330,7 @@ nav .container-fluid {
         width: 190%;
         margin-top: -40px !important;
         height: 70px;
+        overflow-x: hidden;
     }
 }
 
@@ -1054,7 +1060,7 @@ footer #head {
 }
 
 footer .links {
-    width: 1055px;
+    width: 100%;
     margin: 30px 0 40px 0px;
     gap: 150px;
     display: flex;
@@ -1117,8 +1123,9 @@ footer .final {
     footer {
         width: 100%;
         font-size: 16px;
-        margin-left: 32px;
+        margin-left: 0px;
         margin-bottom: 30px;
+        padding-left: 20px;
     }
 
     footer .links {
@@ -1134,7 +1141,8 @@ footer .final {
     }
 
     footer .final {
-        display: block;        
+        display: block;  
+        width: 95%;      
     }
 
 
